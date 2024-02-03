@@ -26,7 +26,7 @@ local ExecutorUsing = is_sirhurt_closure and "Sirhurt" or pebc_execute and "Prot
 
                                         {
                                             ["name"]= "Mirage island🏝",
-                                            ["value"]= "```found⁉👁‍🗨```",
+                                            ["value"]= "```found 👁‍🗨```",
                                             ["inline"]= true
                                         },
                                         {
