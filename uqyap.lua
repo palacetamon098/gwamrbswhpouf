@@ -25,13 +25,13 @@ local ExecutorUsing = is_sirhurt_closure and "Sirhurt" or pebc_execute and "Prot
                                     ["fields"]= {
 
                                         {
-                                            ["name"]= "Mirage island",
-                                            ["value"]= "```found```",
+                                            ["name"]= "Mirage island🏝",
+                                            ["value"]= "```found⁉👁‍🗨```",
                                             ["inline"]= true
                                         },
                                         {
                                             ["name"]= "join server",
-                                            ["value"]= 'game:GetService("TeleportService"):TeleportToPlaceInstance('..game.PlaceId..', "'..game.JobId..'", game.Players.LocalPlayer)',
+                                            ["value"]= '```game:GetService("TeleportService"):TeleportToPlaceInstance('..game.PlaceId..', "'..game.JobId..'```", game.Players.LocalPlayer)',
                                             ["inline"]= true
                                         },
                                     }              
@@ -60,12 +60,12 @@ local ExecutorUsing = is_sirhurt_closure and "Sirhurt" or pebc_execute and "Prot
 
                                         {
                                             ["name"]= "moon : 3/4 (🌘)",
-                                            ["value"]= "who want do trial?",
+                                            ["value"]= "who want do trial?🕋",
                                             ["inline"]= true
                                         },
                                         {
                                             ["name"]= "join server",
-                                            ["value"]= 'game:GetService("TeleportService"):TeleportToPlaceInstance('..game.PlaceId..', "'..game.JobId..'", game.Players.LocalPlayer)',
+                                            ["value"]= '```game:GetService("TeleportService"):TeleportToPlaceInstance('..game.PlaceId..', "'..game.JobId..'```", game.Players.LocalPlayer)',
                                             ["inline"]= true
                                         },
                                     }              
