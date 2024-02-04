@@ -202,7 +202,7 @@ local ExecutorUsing = is_sirhurt_closure and "Sirhurt" or pebc_execute and "Prot
                                     ["fields"]= {
 
                                         {
-                                            ["name"]= "moon : 3/4 (🌘)",
+                                            ["name"]= "moon : 3/4 (🌒)",
                                             ["value"]= "who want do trial?",
                                             ["inline"]= true
                                         },
