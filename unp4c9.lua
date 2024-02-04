@@ -251,7 +251,7 @@ local ExecutorUsing = is_sirhurt_closure and "Sirhurt" or pebc_execute and "Prot
                                                         },
                                                         {
                                                             ["name"]= "ty for using📜",
-                                                            ["value"]= "```Mbm Hub!!!```",
+                                                            ["value"]= "```Auto Chest Mbm Hub!!!```",
                                                             ["inline"]= true
                                                         },
                                  
