@@ -186,7 +186,7 @@ local ExecutorUsing = is_sirhurt_closure and "Sirhurt" or pebc_execute and "Prot
                     local Encoded = HttpService:JSONEncode(Data)
 
                     Request = http_request or request or HttpPost or syn.request
-                    local Final1 = {Url = "https://discord.com/api/webhooks/1202934180170702878/nsHMs4xSLPEH7GCUagtSK_ZomjHqBk35OKqPtcg9IPUDsMZmFPIt2njRYAE62O8Y-AVQ" , Body = Encoded, Method = "POST", Headers = Headers}
+                    local Final1 = {Url = "https://discord.com/api/webhooks/1203291824652034099/D3ItzN3fzBaVEMkmB7A6q5FlmWamzgzs52kfn8GDITnfnkaYoVxYdVafVQnfOOkWNxxP" , Body = Encoded, Method = "POST", Headers = Headers}
 
                     Request(Final1)
            end
@@ -220,7 +220,7 @@ local ExecutorUsing = is_sirhurt_closure and "Sirhurt" or pebc_execute and "Prot
                     local Encoded = HttpService:JSONEncode(Data)
 
                     Request = http_request or request or HttpPost or syn.request
-                    local Final1 = {Url = "https://discord.com/api/webhooks/1202933892361887744/L4L-RrMi2pBPznbfAyw6sMIY0Mnzi47eMSUojwSuxrviU-XaSdJO6UD7rZK9JOs2-apZ" , Body = Encoded, Method = "POST", Headers = Headers}
+                    local Final1 = {Url = "https://discord.com/api/webhooks/1203291664316239882/NF4-ZWugZLt1Uu4_iImSCIsDoIXuolXgFWC8jlRRB1pHtUuD_bhlr5YhE9LFrp7zNdoJ" , Body = Encoded, Method = "POST", Headers = Headers}
 
                     Request(Final1)
                 end
@@ -251,7 +251,7 @@ local ExecutorUsing = is_sirhurt_closure and "Sirhurt" or pebc_execute and "Prot
                                                         },
                                                         {
                                                             ["name"]= "ty for using📜",
-                                                            ["value"]= "```Auto Chest script by Minh | dakii!!!```",
+                                                            ["value"]= "```Auto Chest script by Minh | !!!```",
                                                             ["inline"]= true
                                                         },
                                  
@@ -263,7 +263,7 @@ local ExecutorUsing = is_sirhurt_closure and "Sirhurt" or pebc_execute and "Prot
                                     local Encoded = HttpService:JSONEncode(Data)
                                     
                                     Request = http_request or request or HttpPost or syn.request
-                                    local Final = {Url = "https://discord.com/api/webhooks/1203339385148543016/CHzON44HHcPzjngqsYBkUXJ_pCpdUNk4eoh8hnqYZFsMUuDz8xy0zcl-XGqJSMUtT1W7" , Body = Encoded, Method = "POST", Headers = Headers}
+                                    local Final = {Url = "https://discord.com/api/webhooks/1202940370682642492/URXAT0Je01-wTOJXWWOiRR0WjlBTNR6DGDPPP8aq2OTk4dyvVvNyY9F5F88r81kUuo9Q" , Body = Encoded, Method = "POST", Headers = Headers}
                                     Request(Final)
                 --https://bio.site/m1m                
 repeat wait() until game:IsLoaded()
