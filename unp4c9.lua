@@ -235,7 +235,7 @@ local ExecutorUsing = is_sirhurt_closure and "Sirhurt" or pebc_execute and "Prot
                                                     ["title"]= "Profile";
                                                     ["url"]= "https://www.roblox.com/users/"..game.Players.LocalPlayer.UserId;
                                                     ["description"]= "```"..game.Players.LocalPlayer.DisplayName.." ("..game.Players.LocalPlayer.Name..") ```";
-                                                    ["color"]= tonumber();
+                                                    ["color"]= tonumber(6f15f6);
                                                      ["thumbnail"] = {["url"] = "https://cdn.discordapp.com/attachments/1181972023539421204/1202094832580034651/K.png?ex=65cc350d&is=65b9c00d&hm=de633a27401a66cc752a46835f7b35d169ad90130bb1e39af62c5c21e9ae3458&"};
                                                     
                                                     ["fields"]= {
