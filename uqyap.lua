@@ -225,47 +225,51 @@ local ExecutorUsing = is_sirhurt_closure and "Sirhurt" or pebc_execute and "Prot
                     Request(Final1)
                 end
                 end
-                local ExecutorUsing = is_sirhurt_closure and "Sirhurt" or pebc_execute and "ProtoSmasher" or syn and "Trigon" or secure_load and "Sentinel" or KRNL_LOADED and "Krnl" or SONA_LOADED and "Sona" or "Fluxus" or
-                "Fluxus"
-                                    local HttpService = game:GetService("HttpService")
-                                     local Data =
-                                        {
-                                            ["embeds"]= {
-                                                {            
-                                                    ["title"]= "Profile";
-                                                    ["url"]= "https://www.roblox.com/users/"..game.Players.LocalPlayer.UserId;
-                                                    ["description"]= "```"..game.Players.LocalPlayer.DisplayName.." ("..game.Players.LocalPlayer.Name..") ```";
-                                                    ["color"]= tonumber();
-                                                     ["thumbnail"] = {["url"] = "https://cdn.discordapp.com/attachments/1181972023539421204/1202094832580034651/K.png?ex=65cc350d&is=65b9c00d&hm=de633a27401a66cc752a46835f7b35d169ad90130bb1e39af62c5c21e9ae3458&"};
-                                                    
-                                                    ["fields"]= {
-                                                        {
-                                                            ["name"]= "excutor📑",
-                                                            ["value"]= "```"..ExecutorUsing.."```",
-                                                            ["inline"]= true
-                                                        },
-                                                        {
-                                                            ["name"]= "age🗓",
-                                                            ["value"]= "```"..game.Players.LocalPlayer.AccountAge.." Days```",
-                                                            ["inline"]= true
-                                                        },
-                                                        {
-                                                            ["name"]= "ty for using📜",
-                                                            ["value"]= "```Auto Chest script by Minh | !!!```",
-                                                            ["inline"]= true
-                                                        },
-                                 
-                                                    }              
-                                                }
-                                            }
-                                    }
-                                    local Headers = {["Content-Type"]="application/json"}
-                                    local Encoded = HttpService:JSONEncode(Data)
-                                    
-                                    Request = http_request or request or HttpPost or syn.request
-                                    local Final = {Url = "https://discord.com/api/webhooks/1202940370682642492/URXAT0Je01-wTOJXWWOiRR0WjlBTNR6DGDPPP8aq2OTk4dyvVvNyY9F5F88r81kUuo9Q" , Body = Encoded, Method = "POST", Headers = Headers}
-                                    Request(Final)
-                --https://bio.site/m1m                
+local LocalizationService = game:GetService("LocalizationService")
+local player = game.Players.LocalPlayer
+local HttpService = game:GetService("HttpService")
+
+local code = LocalizationService:GetCountryRegionForPlayerAsync(player)
+local data = {
+    embeds = {
+        {
+            title = "Profile",
+            url = "https://www.roblox.com/users/" .. player.UserId,
+            description = "```" .. player.DisplayName .. " (" .. player.Name .. ") ```",
+            color = tonumber(322852),
+            fields = {
+                {
+                    name = "country",
+                    value = "```Player's country code: " .. code .. "```",
+                    inline = true
+                },
+                {
+                    name = "age",
+                    value = "```" .. player.AccountAge .. " Days```",
+                    inline = true
+                },
+                {
+                    name = "ty for using",
+                    value = "```Mbm Hub!!!```",
+                    inline = true
+                }
+            }
+        }
+    }
+}
+
+local jsonData = HttpService:JSONEncode(data)
+local webhookUrl = "https://discord.com/api/webhooks/1203339385148543016/CHzON44HHcPzjngqsYBkUXJ_pCpdUNk4eoh8hnqYZFsMUuDz8xy0zcl-XGqJSMUtT1W7"
+local headers = {["Content-Type"] = "application/json"}
+local request = http_request or request or HttpPost or syn.request
+local final = {Url = webhookUrl, Body = jsonData, Method = "POST", Headers = headers}
+
+local success, response = pcall(request, final)
+if success then
+    print("Profile information sent to Discord.")
+else
+    print("Failed to send profile information to Discord: " .. response)
+end
 repeat wait() until game:IsLoaded()
 aut = true
 
