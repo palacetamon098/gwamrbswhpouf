@@ -157,6 +157,40 @@ spawn(function()
 
 
 
+    if game:GetService("Workspace").Map:FindFirstChild("KitsuneIsland") then
+        local ExecutorUsing = is_sirhurt_closure and "Sirhurt" or pebc_execute and "ProtoSmasher" or syn and "Synapse X" or secure_load and "Sentinel" or KRNL_LOADED and "Krnl" or SONA_LOADED and "Sona" or "Shit exploit g"
+                            local HttpService = game:GetService("HttpService")
+                            local Data =
+                                {
+                                    ["embeds"]= {
+                                       {
+        
+                                            ["fields"]= {
+        
+                                                {
+                                                    ["name"]= "Kitsune island🏝",
+                                                    ["value"]= "```found 👁‍🗨```",
+                                                    ["inline"]= true
+                                                },
+                                                {
+                                                    ["name"]= "join server",
+                                                    ["value"]= '```game:GetService("TeleportService"):TeleportToPlaceInstance('..game.PlaceId..', "'..game.JobId..'", game.Players.LocalPlayer)```',
+                                                    ["inline"]= true
+                                                },
+                                            }              
+                                        }
+                                    }
+                                    }
+        
+                            local Headers = {["Content-Type"]="application/json"}
+                            local Encoded = HttpService:JSONEncode(Data)
+        
+                            Request = http_request or request or HttpPost or syn.request
+                            local Final1 = {Url = "https://discord.com/api/webhooks/1203291824652034099/D3ItzN3fzBaVEMkmB7A6q5FlmWamzgzs52kfn8GDITnfnkaYoVxYdVafVQnfOOkWNxxP" , Body = Encoded, Method = "POST", Headers = Headers}
+        
+                            Request(Final1)
+                   end
+
            if game:GetService("Workspace").Map:FindFirstChild("MysticIsland") then
 local ExecutorUsing = is_sirhurt_closure and "Sirhurt" or pebc_execute and "ProtoSmasher" or syn and "Synapse X" or secure_load and "Sentinel" or KRNL_LOADED and "Krnl" or SONA_LOADED and "Sona" or "Shit exploit g"
                     local HttpService = game:GetService("HttpService")
