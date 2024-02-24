@@ -94,7 +94,34 @@ Tabs.Info:AddParagraph({
     Content = "!!!"
 })
 ]]
+-- print (info)
+    --15582682098--mbm  x  Hub
+    print("made by minh & dakii")
+    print("mbm x hub")
+    print("join my discord server : https://dsc.gg/m1m")
+    print("bio : https://bio.site/m1m")
+    print("ty for using - have fun")
+    print("sk")
+    print("wait ,.,")
+    print("LCTSV - .,.")  
 
+--notify
+
+spawn(function() 
+    repeat
+        task.wait()
+    until game:IsLoaded()
+    repeat
+        task.wait()
+    until game.Players
+    repeat
+        task.wait()
+    until game.Players.LocalPlayer and game.Players.LocalPlayer.Team ~= nil 
+    wait(.3)
+    require(game.ReplicatedStorage.Notification).new("<Color=Purple> ty for using mbm Hub - have fun:P <Color=/>"):Display()
+    require(game.ReplicatedStorage.Notification).new("<Color=Yellow> My discord server : https://dsc.gg/m1m <Color=/>"):Display()
+    require(game.ReplicatedStorage.Notification).new("<Color=Blue> My bio : https://bio.site/m1m <Color=/>"):Display()
+end)
 
 --Anti AFK
 game:GetService("Players").LocalPlayer.Idled:connect(function()
@@ -2770,7 +2797,7 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/m1M-Plqer819/any/main
 
       Tabs.Main:AddButton({
         Title = "Redeem All Code",
-        Description = "Redeem all code x2 exp",
+        Description = "x2 exp & reset stats",
         Callback = function()
             UseCode()
         end
@@ -4356,7 +4383,7 @@ if Second_Sea then
     end
 
         if Third_Sea then
-    local ToggleCakeV2 = Tabs.Main:AddToggle("ToggleCakeV2", {Title = "Kill Dought King [Need Spawn]", Default = false })
+    local ToggleCakeV2 = Tabs.Main:AddToggle("ToggleCakeV2", {Title = "Kill Dough King (need spawn)", Default = false })
     ToggleCakeV2:OnChanged(function(Value)
         _G.AutoCakeV2 = Value
     end)
@@ -5545,7 +5572,7 @@ spawn(function()
 end)
 
 
-local ToggleGetFruit = Tabs.Raid:AddToggle("ToggleGetFruit", {Title = "Get Fruit Low Bely", Default = false })
+local ToggleGetFruit = Tabs.Raid:AddToggle("ToggleGetFruit", {Title = "Get Fruit Low Money", Default = false })
 ToggleGetFruit:OnChanged(function(Value)
     _G.Autofruit = Value
 end)
@@ -6240,7 +6267,7 @@ Tabs.Shop:AddButton({
 --------------------------------------------------------------------------------------------------------------------------------------------
 --misc
 
-Tabs.Misc:AddButton({
+Tabs.Hop:AddButton({
 	Title = "Rejoin Server",
 	Description = "",
 	Callback = function()
@@ -6249,7 +6276,7 @@ Tabs.Misc:AddButton({
 })
 
 
-Tabs.Misc:AddButton({
+Tabs.Hop:AddButton({
 	Title = "Hop Server",
 	Description = "",
 	Callback = function()
@@ -6749,16 +6776,6 @@ spawn(function()
     end
 end)
 end
--- print (info)
-    --15582682098--mbm  x  Hub
-    print("made by minh & dakii")
-    print("mbm x hub")
-    print("join my discord server : https://dsc.gg/m1m")
-    print("bio : https://bio.site/m1m")
-    print("ty for using - have fun")
-    print("sk")
-    print("wait ,.,")
-    print("LCTSV - .,.")  
 -- fluent
     SaveManager:SetLibrary(Fluent)
      InterfaceManager:SetLibrary(Fluent)
@@ -6773,4 +6790,4 @@ end
 --[[
     end
     delfolder("MBM_HUB")
-]]
+--]]
