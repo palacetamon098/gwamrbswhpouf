@@ -284,7 +284,7 @@ local data = {
                 },
                 {
                     name = "ty for using",
-                    value = "```Mbm Hub!!!```",
+                    value = "```Auto Chest Mbm Hub!!!```",
                     inline = true
                 }
             }
